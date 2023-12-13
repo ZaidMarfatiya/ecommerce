@@ -23,7 +23,7 @@ class ProductList(generics.ListCreateAPIView):
 
 class OrderFilter(FilterSet):
     customer = CharFilter(field_name='customer__name')
-    products = CharFilter(field_name='order_items__product__name')
+    products = CharFilter(field_name='orderitem__product__name')
 
     class Meta:
        model = Order
