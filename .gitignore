@@ -1,0 +1,86 @@
+# Django
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# Virtual Environment
+venv/
+env/
+env36/
+env37/
+env38/
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# Local development settings
+local_settings.py
+
+# Ignore the production settings file
+production_settings.py
+
+# Ignore the test database
+*.test
+
+# Ignore coverage reports
+htmlcov/
+.coverage
+
+# Ignore generated files
+staticfiles/
+media/
+static_root/
+
+# Ignore Django migration files
+**/migrations/*.py
+**/migrations/*.pyc
+
+# Ignore pycache
+__pycache__/
+
+# Ignore pipenv virtual environment
+/.venv
+
+# Ignore .env file containing sensitive information
+.env
+
+# Ignore secret key file
+secret_key.txt
+
+# Ignore local development database
+db.sqlite3
+
+# Ignore Django Debug Toolbar state
+.ddb/
+
+# Ignore any local environment files
+.env.local
+
+# Ignore Docker files
+docker-compose.yml
+Dockerfile
+
+# Ignore pytest cache
+__pycache__/
+.pytest_cache/
+
+# Ignore coverage files
+.coverage
+
+# Ignore local history of files
+.history/
+
+# Ignore Django Crispy Forms
+.crispy-concrete/
