@@ -23,7 +23,11 @@ class ProductList(generics.ListCreateAPIView):
 
 class OrderFilter(FilterSet):
     customer = CharFilter(field_name='customer__name')
-    products = CharFilter(field_name='orderitem__product__name')
+    products = CharFilter(field_name='orderitem__product__name', method='filter_products')
+
+    def filter_products(self, queryset, name, value):
+        products_list = value.split(',')
+        return queryset.filter(orderitem__product__name__in=products_list)
 
     class Meta:
        model = Order
